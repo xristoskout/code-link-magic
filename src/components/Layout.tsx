@@ -1,6 +1,6 @@
 import { Link, Outlet, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
-import { Car, Phone, Info } from "lucide-react";
+import { Car, Phone, Info, Taxi } from "lucide-react";
 
 const Layout = () => {
   const location = useLocation();
@@ -31,6 +31,18 @@ const Layout = () => {
               >
                 <Car className="w-4 h-4 mr-2" />
                 Αυτοκίνητα
+              </Link>
+              <Link
+                to="/mr-booking"
+                className={cn(
+                  "inline-flex items-center px-1 pt-1 text-sm font-medium",
+                  isActive("/mr-booking")
+                    ? "text-red-600 border-b-2 border-red-600"
+                    : "text-gray-500 hover:text-gray-700"
+                )}
+              >
+                <Taxi className="w-4 h-4 mr-2" />
+                Mr. Booking
               </Link>
               <Link
                 to="/contact"
