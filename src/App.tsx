@@ -10,6 +10,7 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import Layout from "./components/Layout";
+import MrBooking from "./pages/MrBooking";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => (
             <Route path="/cars/:id" element={<CarDetails />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
+            <Route path="/mr-booking" element={<MrBooking />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
