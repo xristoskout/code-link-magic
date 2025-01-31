@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ChevronRight, Phone, Mail, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -11,9 +12,11 @@ const Index = () => {
         <div className="relative z-10 text-center text-white px-4">
           <h1 className="text-5xl font-bold mb-4">Nissan Fotiadis</h1>
           <p className="text-xl mb-8">Η καλύτερη επιλογή για μεταχειρισμένα Nissan</p>
-          <Button className="bg-red-600 hover:bg-red-700">
-            Δείτε τα αυτοκίνητά μας <ChevronRight className="ml-2" />
-          </Button>
+          <Link to="/cars">
+            <Button className="bg-red-600 hover:bg-red-700">
+              Δείτε τα αυτοκίνητά μας <ChevronRight className="ml-2" />
+            </Button>
+          </Link>
         </div>
       </section>
 
