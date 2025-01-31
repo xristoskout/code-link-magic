@@ -1,6 +1,6 @@
 import { Link, Outlet, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
-import { Car, Phone, Info, Taxi } from "lucide-react";
+import { Car, Phone, Info, CarTaxiFront } from "lucide-react";
 
 const Layout = () => {
   const location = useLocation();
@@ -41,7 +41,7 @@ const Layout = () => {
                     : "text-gray-500 hover:text-gray-700"
                 )}
               >
-                <Taxi className="w-4 h-4 mr-2" />
+                <CarTaxiFront className="w-4 h-4 mr-2" />
                 Mr. Booking
               </Link>
               <Link
